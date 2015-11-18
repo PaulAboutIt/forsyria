@@ -26,31 +26,30 @@
 </head>
 
 <body>
-<div id="fb-root"></div>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '537852649703554',
-      xfbml      : true,
-      version    : 'v2.5'
-    });
-  };
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '537852649703554',
+                xfbml: true,
+                version: 'v2.5'
+            });
+        };
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     <h1>Thanksgiving for Syria</h1>
     <p>This page is here to help you share half of your Thanksgiving dinner with the refugees and people still suffering in Syria nad the surrounding region. Please share this and ask your friends and family to come together and be thankful for what we have.</p>
-    <h2>Sharing is caring!</h2>
-    <div class="fb-share-button" data-href="https://thanksgivingforsyria.com" data-layout="button_count"></div>
-    <button><a class="twitter-share-button"
-      href="https://twitter.com/intent/tweet?text=Share%20your%20THanksgiving%20with%20the%20families%20from%20Syria%20http://thanksgivingforsyria.com">
-    Tweet</a></button>
+
     <section>
         <h2>How many guests are you expecting?</h2>
         <input type="number" name="guests" id="guests" min="0" />
@@ -120,6 +119,10 @@
     </section>
     <hr>
     <section>
+        <h2>Sharing is caring!</h2>
+        <div class="fb-share-button" data-href="https://thanksgivingforsyria.com" data-layout="button_count"></div>
+        <button><a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Share%20your%20THanksgiving%20with%20the%20families%20from%20Syria%20http://thanksgivingforsyria.com">
+    Tweet</a></button>
         <h2>Ways to share</h2>
         <ul>
             <li>
@@ -170,7 +173,7 @@
                     dishTotal -= parseFloat(val.currentTarget.childNodes[1].value);
                 }
                 total = parseInt(dishTotal * guests);
-                half = parseInt(total/2);
+                half = parseInt(total / 2);
                 $('#total').text(total);
                 $('#half').text(half);
 
