@@ -45,6 +45,14 @@
         body {
             margin: 20px;
         }
+        .btn-group {
+            margin-top: 5px;
+        }
+        #guests {
+            font-size: 30px;
+            text-align: right;
+            border-radius: 5px;
+        }
     </style>
 </head>
 
@@ -70,14 +78,17 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
-    <h1>Thanksgiving for Syria</h1>
-    <p>This page is here to help you share half of your Thanksgiving dinner with the refugees and people still suffering in Syria and the surrounding region. Please share this and ask your friends and family to come together and be thankful for what we have.</p>
+    <header class="col-sm-10 col-sm-offset-1">
+        <h1>Thanksgiving for Syria</h1>
+        <p>This page is here to help you share half of your Thanksgiving dinner with the refugees and people still suffering in Syria and the surrounding region. Please share this and ask your friends and family to come together and be thankful for what we have.</p>
 
-    <section>
+    </header>
+
+    <section class="col-sm-10 col-sm-offset-1">
         <h2>How many guests are you expecting?</h2>
         <input type="number" name="guests" id="guests" min="0" max="100" />
     </section>
-    <section id="dishes">
+    <section id="dishes" class="col-sm-10 col-sm-offset-1">
         <h2>What are you serving?</h2>
         <div class="btn-group" data-toggle="buttons">
             <label class="btn btn-default">
@@ -135,21 +146,17 @@
         </div>
     </section>
     <hr>
-    <section>
-        <h2>Total $<span id="total"></span>.00</h2>
+    <section class="col-sm-10 col-sm-offset-1">
+        <h2 class="col-sm-6">Total $<span id="total"></span>.00</h2>
 
-        <h2>Half $<span id="half"></span>.00</h2>
+        <h2 class="col-sm-6">Half $<span id="half"></span>.00</h2>
     </section>
     <hr>
     <section style="display:block">
 
 
         <div class="col-sm-10 col-sm-offset-1">
-            <h4>Sharing is caring!</h4>
-            <div class="fb-share-button" data-href="https://thanksgivingforsyria.com" data-layout="button_count"></div>
-            <button><a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Share%20your%20THanksgiving%20with%20the%20families%20from%20Syria%20http://thanksgivingforsyria.com">
-    Tweet</a></button>
-            <h2>Ways to share</h2>
+            <h3>Ways to share</h3>
             <div class="panel-group" id="accordion">
                 <div class="panel panel-default">
                     <div class="panel-heading">
@@ -210,9 +217,18 @@
                         </div>
                     </div>
                 </div>
+                <br>
+                <div class="fb-share-button" data-href="https://thanksgivingforsyria.com" data-layout="button_count"></div>
+            <button><a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Share%20your%20THanksgiving%20with%20the%20families%20from%20Syria%20http://thanksgivingforsyria.com">
+    Tweet</a></button>
             </div>
+            
         </div>
+        
     </section>
+    <footer>
+        
+    </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
