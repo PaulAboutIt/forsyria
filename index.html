@@ -26,7 +26,31 @@
 </head>
 
 <body>
-    <h1>Sharing is caring!</h1>
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '537852649703554',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+    <h1>Thanksgiving for Syria</h1>
+    <p>The people fleeing Syria need our help. This page is here to help you share half of your Thanksgiving dinner with the refugees and people still suffering in Syria nad the surrounding region. Please share this and ask your friends and family to come together and be thankful for what we have.</p>
+    <h2>Sharing is caring!</h2>
+    <div class="fb-share-button" data-href="https://thanksgivingforsyria.com" data-layout="button_count"></div>
+    <a class="twitter-share-button"
+      href="https://twitter.com/intent/tweet?text=Share%20your%20THanksgiving%20with%20the%20families%20from%20Syria%20http://thanksgivingforsyria.com">
+    Tweet</a>
     <section>
         <h2>How many guests are you expecting?</h2>
         <input type="number" name="guests" id="guests" min="0" />
