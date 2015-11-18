@@ -8,11 +8,11 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Thanksgiving for Syria</title>
 
-       <meta property="og:url"           content="http://thanksgivingforsyria.com" />
-    <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="Thanksgiving for Syria" />
-    <meta property="og:description"   content="This page is here to help you share half of your Thanksgiving dinner with the refugees and people still suffering in Syria" />
-    <meta property="og:image"         content="http://kardsunlimited.com/wp-content/uploads/2014/11/thanksgiving-dinner-21.jpg" />
+    <meta property="og:url" content="http://thanksgivingforsyria.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Thanksgiving for Syria" />
+    <meta property="og:description" content="This page is here to help you share half of your Thanksgiving dinner with the refugees and people still suffering in Syria" />
+    <meta property="og:image" content="http://kardsunlimited.com/wp-content/uploads/2014/11/thanksgiving-dinner-21.jpg" />
 
     <!-- Bootstrap -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
@@ -167,8 +167,8 @@
             $('#half').text(half);
             $('#guests').on('change', function () {
                 guests = $('#guests').val();
-                total = parseFloat(dishTotal * guests);
-                half = parseFloat(total) / 2;
+                total = parseInt(dishTotal * guests);
+                half = parseInt(total/2);
                 $('#total').text(total);
                 $('#half').text(half);
             })
