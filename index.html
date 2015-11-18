@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>THanksgiving for Syria</title>
+
+    <!-- Bootstrap -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/css/bootstrap-theme.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <h1>Sharing is caring!</h1>
+    <section>
+        <h2>How many guests are you expecting?</h2>
+        <input type="number" name="guests" id="guests" min="0" />
+    </section>
+    <section id="dishes">
+        <h2>What are you serving?</h2>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-default">
+                <input type="checkbox" autocomplete="off" id="turkey" value="4"> Turkey
+            </label>
+            <label class="btn btn-default">
+                <input type="checkbox" autocomplete="off" value="1"> Stuffing
+            </label>
+            <label class="btn btn-default">
+                <input type="checkbox" autocomplete="off" value="2"> Organic
+            </label>
+        </div>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-default">
+                <input type="checkbox" autocomplete="off" value="1.75"> Potatoes
+            </label>
+            <label class="btn btn-default">
+                <input type="checkbox" autocomplete="off" value="1"> Gravy
+            </label>
+        </div>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-default">
+                <input type="checkbox" autocomplete="off" value="1.5"> Dressing
+            </label>
+        </div>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-default">
+                <input type="checkbox" autocomplete="off" value="1"> Sweet Potatoes
+            </label>
+        </div>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-default">
+                <input type="checkbox" autocomplete="off" value=".75"> Casserole
+            </label>
+        </div>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-default">
+                <input type="checkbox" autocomplete="off" value="1.5"> Pumpkin Pie
+            </label>
+        </div>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-default">
+                <input type="checkbox" autocomplete="off" value=".5"> Cranberry Sauce
+            </label>
+        </div>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-default">
+                <input type="checkbox" autocomplete="off" value="2.5"> Wine
+            </label>
+        </div>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-default">
+                <input type="checkbox" autocomplete="off" value=".5"> Cornbread/Biscuits
+            </label>
+        </div>
+    </section>
+    <section>
+        <h2>Total <span id="total"></span></h2>
+        
+        <h2>Half <span id="half"></span></h2>
+    </section>
+    <section>
+        <h2>Ways to share</h2>
+        <ul>
+            <li><a href=""></a></li>
+        </ul>
+    </section>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var guests = 0;
+            var dishTotal = 0;
+            var total= 0
+            var half = total/2;
+            $('#total').text(total);
+            $('#half').text(half);
+            $('#guests').on('change', function() {
+                guests = $('#guests').val();
+                total = parseFloat(dishTotal*guests);
+                half = parseFloat(total)/2;
+                $('#total').text(total);
+                $('#half').text(half);
+            })
+            $('#dishes div label').on('click', function(val) {
+                if ($.inArray('active', val.currentTarget.classList) == -1) {
+                    dishTotal += parseFloat(val.currentTarget.childNodes[1].value);
+                } else {
+                    dishTotal -= parseFloat(val.currentTarget.childNodes[1].value);
+                }
+                total = parseFloat(dishTotal*guests);
+                half = parseFloat(total)/2;
+                $('#total').text(total);
+                $('#half').text(half);
+                
+            })
+        });
+    </script>
+</body>
+
+</html>
