@@ -85,13 +85,32 @@
     </section>
     <section>
         <h2>Total <span id="total"></span></h2>
-        
+
         <h2>Half <span id="half"></span></h2>
     </section>
     <section>
         <h2>Ways to share</h2>
         <ul>
-            <li><a href=""></a></li>
+            <li>
+                <a href="http://www.moas.eu/">Migrant Offshore Aid Station</a>
+                <p>This charity exists to save children like Alan Kurdi, with a fleet of rescue boats patrolling the Mediterranean to save migrants lost at sea.</p>
+            </li>
+            <li>
+                <a href="http://www.refugees-welcome.net/">Refugees Welcome</a>
+                <p>Dubbed as a kind of “Airbnb for refugees” this German nonprofit matches people with spare rooms with refugees in need of housing. If you don’t have a spare bed in Germany, you can still donate <a href="https://www.betterplace.org/en/projects/25731-refugees-welcome/donations/new#wcp">here</a>.</p>
+            </li>
+            <li><a href="https://www.facebook.com/theworldwidetribe">The Worldwide Tribe in Calais </a>
+                <p>A group of social activists documenting stories in the Calais migrant camp, they also raise relief funds. </p>
+            </li>
+            <li><a href="http://www.smallprojectsistanbul.org/">Small Projects Istanbul </a>
+                <p>Provides classes and cultural enrichment and scholarships to Syrian children in Turkey.</p>
+            </li>
+            <li><a href="http://www.karamfoundation.org/back-to-school-1/">Karam Foundation </a>
+                <p>A US-based charity that works in Turkey and is also focused on educational opportunities for Syrian children, currently raising funds to rebuild schools in Syria.</p>
+            </li>
+            <li><a href="http://www.handinhandforsyria.org.uk/">Hand in Hand for Syria </a>
+                <p>One of the few organizations that directly provides aid on the ground in Syria, including food, clothing, water, sanitation and crucial medical assistance to “help people to stay in Syria instead of fleeing to another country.” They accept donations via their page on JustGiving.com.</p>
+            </li>
         </ul>
     </section>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -102,30 +121,46 @@
         $(document).ready(function () {
             var guests = 0;
             var dishTotal = 0;
-            var total= 0
-            var half = total/2;
+            var total = 0
+            var half = total / 2;
             $('#total').text(total);
             $('#half').text(half);
-            $('#guests').on('change', function() {
+            $('#guests').on('change', function () {
                 guests = $('#guests').val();
-                total = parseFloat(dishTotal*guests);
-                half = parseFloat(total)/2;
+                total = parseFloat(dishTotal * guests);
+                half = parseFloat(total) / 2;
                 $('#total').text(total);
                 $('#half').text(half);
             })
-            $('#dishes div label').on('click', function(val) {
+            $('#dishes div label').on('click', function (val) {
                 if ($.inArray('active', val.currentTarget.classList) == -1) {
                     dishTotal += parseFloat(val.currentTarget.childNodes[1].value);
                 } else {
                     dishTotal -= parseFloat(val.currentTarget.childNodes[1].value);
                 }
-                total = parseFloat(dishTotal*guests);
-                half = parseFloat(total)/2;
+                total = parseFloat(dishTotal * guests);
+                half = parseFloat(total) / 2;
                 $('#total').text(total);
                 $('#half').text(half);
-                
+
             })
         });
+    </script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-70338634-1', 'auto');
+        ga('send', 'pageview');
     </script>
 </body>
 
