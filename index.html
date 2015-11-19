@@ -45,25 +45,27 @@
         body {
             padding: 0px;
             background: #FFF9cc;
-            
         }
+        
         header {
             padding-top: 0px;
         }
+        
         section {
             padding: 20px;
         }
+        
         .btn-group {
             margin-top: 5px;
         }
+        
         #guests {
             font-size: 30px;
             text-align: right;
             border-radius: 5px;
+            margin-left: 10px;
         }
-        .well {
-            margin-top:40px;
-        }
+        
         .header-img {
             height: 200px;
             background-image: url('feast.jpg');
@@ -99,15 +101,17 @@
     </script>
     <div class="header-img col-sm-12"></div>
     <header class="col-sm-10 col-sm-offset-1">
-        
+
         <h1>Thanksgiving for Syria</h1>
         <p>This page is here to help you share half of your Thanksgiving dinner with the refugees and people still suffering in Syria and the surrounding region. Please share this and ask your friends and family to come together and be thankful for what we have.</p>
 
     </header>
 
     <section class="col-sm-10 col-sm-offset-1">
-        <h3>How many guests are you expecting?</h3>
-        <input type="number" name="guests" id="guests" min="0" max="100" />
+        <div class="col-sm-12">
+            <h3 class="pull-left">How many guests are you expecting?</h3>
+            <input type="number" class="pull-left" name="guests" id="guests" min="0" max="100" />
+        </div>
     </section>
     <section id="dishes" class="col-sm-10 col-sm-offset-1">
         <h3>What are you serving?</h3>
@@ -204,13 +208,16 @@
                 <input type="checkbox" autocomplete="off" value=".5"> Biscuits
             </label>
         </div>
-        
-    </section>
-    
-    <section class="col-sm-8 col-sm-offset-2 well well-large">
-        <h2 class="col-sm-6">Total $<span id="total"></span>.00</h2>
 
-        <h2 class="col-sm-6">Half $<span id="half"></span>.00</h2>
+    </section>
+
+    <section class="col-sm-10 col-sm-offset-1">
+       <h3>Your meal will cost</h3>
+       <div class="col-sm-12 well well-large">
+            <h2 class="col-sm-6">Total $<span id="total"></span>.00</h2>
+
+            <h2 class="col-sm-6">Half $<span id="half"></span>.00</h2>
+        </div>
     </section>
     <hr>
     <section style="display:block">
@@ -280,15 +287,15 @@
                 </div>
                 <br>
                 <div class="fb-share-button" data-href="http://thanksgivingforsyria.com" data-layout="button_count"></div>
-            <button><a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Share%20your%20THanksgiving%20with%20the%20families%20from%20Syria%20http://thanksgivingforsyria.com">
+                <button><a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Share%20your%20THanksgiving%20with%20the%20families%20from%20Syria%20http://thanksgivingforsyria.com">
     Tweet</a></button>
             </div>
-            
+
         </div>
-        
+
     </section>
     <footer>
-        
+
     </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
