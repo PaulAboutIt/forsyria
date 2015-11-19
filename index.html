@@ -53,6 +53,9 @@
             text-align: right;
             border-radius: 5px;
         }
+        .well {
+            margin-top:40px;
+        }
     </style>
 </head>
 
@@ -85,11 +88,11 @@
     </header>
 
     <section class="col-sm-10 col-sm-offset-1">
-        <h2>How many guests are you expecting?</h2>
+        <h3>How many guests are you expecting?</h3>
         <input type="number" name="guests" id="guests" min="0" max="100" />
     </section>
     <section id="dishes" class="col-sm-10 col-sm-offset-1">
-        <h2>What are you serving?</h2>
+        <h3>What are you serving?</h3>
         <div class="btn-group" data-toggle="buttons">
             <label class="btn btn-default">
                 <input type="checkbox" autocomplete="off" id="turkey" value="4"> Turkey
@@ -107,6 +110,26 @@
             </label>
             <label class="btn btn-default">
                 <input type="checkbox" autocomplete="off" value="1"> Gravy
+            </label>
+        </div>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-default">
+                <input type="checkbox" autocomplete="off" value="3.5"> Ham
+            </label>
+        </div>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-default">
+                <input type="checkbox" autocomplete="off" value="4.5"> Ribs
+            </label>
+        </div>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-default">
+                <input type="checkbox" autocomplete="off" value="1"> Corn
+            </label>
+        </div>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-default">
+                <input type="checkbox" autocomplete="off" value=".5"> Cookies
             </label>
         </div>
         <div class="btn-group" data-toggle="buttons">
@@ -136,17 +159,37 @@
         </div>
         <div class="btn-group" data-toggle="buttons">
             <label class="btn btn-default">
-                <input type="checkbox" autocomplete="off" value="2.5"> Wine
+                <input type="checkbox" autocomplete="off" value=".5"> Cole Slaw
             </label>
         </div>
         <div class="btn-group" data-toggle="buttons">
             <label class="btn btn-default">
-                <input type="checkbox" autocomplete="off" value=".5"> Cornbread/Biscuits
+                <input type="checkbox" autocomplete="off" value=".5"> Fruit Salad
             </label>
         </div>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-default">
+                <input type="checkbox" autocomplete="off" value="2.5"> Wine
+            </label>
+            <label class="btn btn-default">
+                <input type="checkbox" autocomplete="off" value="2.5"> Beer
+            </label>
+            <label class="btn btn-default">
+                <input type="checkbox" autocomplete="off" value="2.5"> Spirits
+            </label>
+        </div>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-default">
+                <input type="checkbox" autocomplete="off" value=".5"> Cornbread
+            </label>
+            <label class="btn btn-default">
+                <input type="checkbox" autocomplete="off" value=".5"> Biscuits
+            </label>
+        </div>
+        
     </section>
-    <hr>
-    <section class="col-sm-10 col-sm-offset-1">
+    
+    <section class="col-sm-8 col-sm-offset-2 well well-large">
         <h2 class="col-sm-6">Total $<span id="total"></span>.00</h2>
 
         <h2 class="col-sm-6">Half $<span id="half"></span>.00</h2>
