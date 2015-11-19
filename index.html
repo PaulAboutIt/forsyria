@@ -44,7 +44,7 @@
     <style>
         body {
             padding: 0px;
-            background: #FFF9cc;
+            background: #FFF9DD;
         }
         
         header {
@@ -108,9 +108,9 @@
     </header>
 
     <section class="col-sm-10 col-sm-offset-1">
-            <h3 class="pull-left">How many guests are you expecting?</h3>
-            <input type="number" class="pull-left" name="guests" id="guests" min="0" max="100" />
-        
+        <h3 class="pull-left">How many guests are you expecting?</h3>
+        <input type="number" class="pull-left" name="guests" id="guests" min="0" max="100" />
+
     </section>
     <div class="clearfix"></div>
     <section id="dishes" class="col-sm-10 col-sm-offset-1">
@@ -128,17 +128,18 @@
         </div>
         <div class="btn-group" data-toggle="buttons">
             <label class="btn btn-default">
+                <input type="checkbox" autocomplete="off" value="3.5"> Ham
+            </label>
+        </div>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-default">
                 <input type="checkbox" autocomplete="off" value="1.75"> Potatoes
             </label>
             <label class="btn btn-default">
                 <input type="checkbox" autocomplete="off" value="1"> Gravy
             </label>
         </div>
-        <div class="btn-group" data-toggle="buttons">
-            <label class="btn btn-default">
-                <input type="checkbox" autocomplete="off" value="3.5"> Ham
-            </label>
-        </div>
+
         <div class="btn-group" data-toggle="buttons">
             <label class="btn btn-default">
                 <input type="checkbox" autocomplete="off" value="4.5"> Ribs
@@ -186,11 +187,6 @@
         </div>
         <div class="btn-group" data-toggle="buttons">
             <label class="btn btn-default">
-                <input type="checkbox" autocomplete="off" value=".5"> Fruit Salad
-            </label>
-        </div>
-        <div class="btn-group" data-toggle="buttons">
-            <label class="btn btn-default">
                 <input type="checkbox" autocomplete="off" value="2.5"> Wine
             </label>
             <label class="btn btn-default">
@@ -200,6 +196,12 @@
                 <input type="checkbox" autocomplete="off" value="2.5"> Spirits
             </label>
         </div>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-default">
+                <input type="checkbox" autocomplete="off" value=".5"> Fruit Salad
+            </label>
+        </div>
+
         <div class="btn-group" data-toggle="buttons">
             <label class="btn btn-default">
                 <input type="checkbox" autocomplete="off" value=".5"> Cornbread
@@ -212,15 +214,14 @@
     </section>
 
     <section class="col-sm-10 col-sm-offset-1">
-       <h3>Your meal will cost</h3>
-       <div class="col-sm-12 well well-large">
+        <h3>Your meal will cost</h3>
+        <div class="col-sm-12 well well-large">
             <h2 class="col-sm-6">Total $<span id="total"></span>.00</h2>
 
             <h2 class="col-sm-6">Half $<span id="half"></span>.00</h2>
         </div>
     </section>
-    <hr>
-    <section style="display:block">
+    <section>
 
 
         <div class="col-sm-10 col-sm-offset-1">
@@ -294,9 +295,6 @@
         </div>
 
     </section>
-    <footer>
-
-    </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
