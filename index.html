@@ -2,11 +2,6 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Thanksgiving for Syria</title>
 
     <meta property="og:url" content="http://thanksgivingforsyria.com" />
     <meta property="og:type" content="website" />
@@ -14,71 +9,100 @@
     <meta property="og:description" content="This page is here to help you share half of your Thanksgiving dinner with the refugees and people still suffering in Syria" />
     <meta property="og:image" content="http://kardsunlimited.com/wp-content/uploads/2014/11/thanksgiving-dinner-21.jpg" />
 
-    <!-- Bootstrap -->
-    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="dist/css/bootstrap-theme.css" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <title>Thanksgiving for Syria</title>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style>
-        body {
-            padding: 0px;
-            background: #FFF9DD;
-        }
-        
-        header {
-            padding-top: 0px;
-        }
-        
-        section {
-            padding: 5px;
-        }
-        
-        .btn-group {
-            margin-top: 5px;
-        }
-        
         #guests {
             font-size: 30px;
             text-align: right;
             border-radius: 5px;
             margin-left: 10px;
+            color: #333;
+            
         }
-        
-        .header-img {
-            height: 200px;
-            background-image: url('feast.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            display: block;
+        .well {
+            background: #333;
+        }
+        .panel-body {
+            background: #111;
+        }
+        .btn-group {
+            margin: 5px;
         }
     </style>
+
 </head>
 
-<body>
-    <div id="fb-root"></div>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  Thanksgiving for <span class="light">Syria</span> 
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#guests-section">Guests</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#your-meal">Your Meal</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#share">Ways to Share Your Meal</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Thanksgiving for Syria</h1>
+                        <p class="intro-text">Share your Thanksgiving dinner with the people suffering in Syria and the surrounding region.</p>
+                        <a href="#guests-section" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+     <div id="fb-root"></div>
     <script>
         window.fbAsyncInit = function () {
             FB.init({
@@ -99,22 +123,22 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
-    <div class="header-img col-sm-12"></div>
-    <header class="col-sm-10 col-sm-offset-1">
 
-        <h1>Thanksgiving for Syria</h1>
-        <p>This page is here to help you share half of your Thanksgiving dinner with the refugees and people suffering in Syria and the surrounding region. Please share this and ask your friends and family to come together in thanks for what we have.</p>
-
-    </header>
-
-    <section class="col-sm-10 col-sm-offset-1">
-        <h3 class="pull-left">How many guests are you expecting?</h3>
-        <input type="number" class="pull-left" name="guests" id="guests" min="0" max="100" />
-
+    
+    <!-- Download Section -->
+    <section id="guests-section" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2>How many guests are you expecting?</h2>
+                    <input type="number" name="guests" id="guests" min="0" />
+                    <p></p>
+                    <a href="#your-meal" class="btn btn-circle page-scroll">
+                        <i class="fa fa-angle-double-down animated"></i>
+                    </a>
     </section>
-    <div class="clearfix"></div>
-    <section id="dishes" class="col-sm-10 col-sm-offset-1">
-        <h3>What are you serving?</h3>
+    <section id="your-meal" class="content-section  text-center col-sm-10 col-sm-offset-1">
+        <h2>What are you serving?</h2>
         <div class="btn-group" data-toggle="buttons">
             <label class="btn btn-default">
                 <input type="checkbox" autocomplete="off" id="turkey" value="4"> Turkey
@@ -210,20 +234,26 @@
                 <input type="checkbox" autocomplete="off" value=".5"> Biscuits
             </label>
         </div>
-
+        <p></p>
+        <a href="#total-section" class="btn btn-circle page-scroll">
+            <i class="fa fa-angle-double-down animated"></i>
+        </a>
     </section>
-
-    <section class="col-sm-10 col-sm-offset-1">
+    <section id="total-section" class="content-section  text-center col-sm-10 col-sm-offset-1">
         <h3>Your meal will cost</h3>
         <div class="col-sm-12 well well-large">
             <h2 class="col-sm-6">Total $<span id="total"></span>.00</h2>
 
             <h2 class="col-sm-6">Half $<span id="half"></span>.00</h2>
         </div>
+        <p></p>
+        <a href="#share" class="btn btn-circle page-scroll">
+            <i class="fa fa-angle-double-down animated"></i>
+        </a>
     </section>
-    <section>
 
-
+    <!-- Contact Section -->
+    <section id="share" class="content-section col-sm-10 col-sm-offset-1">
         <div class="col-sm-10 col-sm-offset-1">
             <h3>Ways to share</h3>
             <div class="panel-group" id="accordion">
@@ -238,8 +268,7 @@
                         <div class="panel-body">
                             <a href="http://www.moas.eu/">Migrant Offshore Aid Station</a>
                             <p>This charity exists to save children like Alan Kurdi, with a fleet of rescue boats patrolling the Mediterranean to save migrants lost at sea.</p>
-                            <a href="http://www.handinhandforsyria.org.uk/">Hand in Hand for Syria </a>
-                            <p>One of the few organizations that directly provides aid on the ground in Syria, including food, clothing, water, sanitation and crucial medical assistance to “help people to stay in Syria instead of fleeing to another country.” They accept donations via their page on JustGiving.com.</p>
+                            
                         </div>
                     </div>
                 </div>
@@ -314,15 +343,16 @@
                 $('#total').text(total);
                 $('#half').text(half);
             })
-            $('#dishes div label').on('click', function (val) {
+            $('#your-meal div label').on('click', function (val) {
                 if ($.inArray('active', val.currentTarget.classList) == -1) {
                     dishTotal += parseFloat(val.currentTarget.childNodes[1].value);
                 } else {
                     dishTotal -= parseFloat(val.currentTarget.childNodes[1].value);
                 }
+                console.log(dishTotal, guests)
                 total = parseInt(dishTotal * guests);
                 half = parseInt(total / 2);
-                $('#total').text(val);
+                $('#total').text(total);
                 $('#half').text(half);
 
             })
@@ -344,6 +374,31 @@
         ga('create', 'UA-70338634-1', 'auto');
         ga('send', 'pageview');
     </script>
+    
+            
+                </p>
+               
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
 </body>
 
 </html>
