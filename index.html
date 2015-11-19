@@ -253,9 +253,10 @@
     <section id="total-section" class="content-section  text-center col-sm-10 col-sm-offset-1">
         <h3>Your meal will cost</h3>
         <div class="col-sm-12 well well-large">
-            <h2 class="col-sm-6">Total $<span id="total"></span>.00</h2>
+            <h2 class="col-sm-4">Total $<span id="total"></span>.00</h2>
 
-            <h2 class="col-sm-6">Half $<span id="half"></span>.00</h2>
+            <h2 class="col-sm-4">Half $<span id="half"></span>.00</h2>
+            <h2 class="col-sm-4">Each $<span id="each"></span>.00</h2>
         </div>
         <p></p>
         <a href="#share" class="btn btn-circle page-scroll">
@@ -345,14 +346,17 @@
             var dishTotal = 0;
             var total = 0
             var half = total / 2;
+            var each = 0;
             $('#total').text(total);
             $('#half').text(half);
             $('#guests').on('change', function () {
                 guests = $('#guests').val();
                 total = parseInt(dishTotal * guests);
                 half = parseInt(total / 2);
+                each = parseInt(total / guests);
                 $('#total').text(total);
                 $('#half').text(half);
+                $('#each').text(each);
             })
             $('#your-meal div label').on('click', function (val) {
                 if ($.inArray('active', val.currentTarget.classList) == -1) {
@@ -363,8 +367,10 @@
                 console.log(dishTotal, guests)
                 total = parseInt(dishTotal * guests);
                 half = parseInt(total / 2);
+                each = parseInt(total / guests);
                 $('#total').text(total);
                 $('#half').text(half);
+                $('#each').text(each);
 
             })
         });
